@@ -1,0 +1,79 @@
+
+<div class="d-flex justify-content-center align-items-center">
+    <img src="../../assets/logo.png" class="logo" alt="Logo">
+</div>
+<!-- Pills navs -->
+<div class="text-center mt-5">
+    <h1>Sign Up</h1>
+    <span>Welcome to LifeLink! Please <br>enter your details.</span>
+</div>
+
+<!-- Pills content -->
+<div class="tab-content" style="width: 70%; margin-left: 15%;margin-top: 10%;">
+    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+        <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginPassword">FirstName <span class="red-text">*</span></label>
+                <input type="text" id="signupfirstName" class="form-control" formControlName="firstName" />
+            </div>
+
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginPassword">LastName <span class="red-text">*</span></label>
+                <input type="text" id="signupLastName" class="form-control" formControlName="lastName" />
+            </div>
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginPassword">Phone <span class="red-text">*</span></label>
+                <input type="text" id="loginPone" class="form-control" formControlName="phone" />
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginName">Email <span class="red-text">*</span></label>
+                <input type="email" id="loginName" class="form-control" formControlName="email" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginPassword">Password <span class="red-text">*</span></label>
+                <input type="password" id="loginPassword" class="form-control" formControlName="password" />
+            </div>
+
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="loginPassword">Photo <span class="red-text">*</span></label>
+                <input type="file" id="loginPassword" class="form-control" formControlName="image" />
+            </div>
+
+            <!-- 2 column grid layout -->
+            <div class="row mb-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Checkbox -->
+                </div>
+
+            </div>
+
+            <!-- Submit button -->
+            <!-- Submit button -->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary" >Sign Up</button>
+            </div>
+
+            <div class="text-center my-3">
+                <h2><span>or</span></h2>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-floating btn_border_oauth" ><img src="../../assets/google.png" width="30px" height="30px">Sign up with google</button>
+            </div>
+            <h6 class="signin text-center">Don’t have an account? <a routerLink="/signin" class="ml-5 mt-3" >Sign in</a></h6>
+            <!-- Register buttons
+            <div class="text-center">
+                <p>Not a member? <a href="#!">Register</a></p>
+            </div> -->
+        </form>
+    </div>
+ 
+</div>
+<!-- Pills content -->

@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1000px) {
+
+body{
+    background-color: #F2F5FA;
+    margin-bottom: 10%;
+}
+
+}
+
+.logo{
+    margin-top: 3rem;
+}
+
+.btn_border_oauth{
+    border-color: black;
+    background-color: #F2F5FA;
+}
+
+h2 {
+    line-height: 0.1em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+ } 
+ 
+ /* h2 span { 
+     background:#fff; 
+     padding:0 5px; 
+ } */
+
+ .red-text {
+    color: red;
+ }
+
+ .singup{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}

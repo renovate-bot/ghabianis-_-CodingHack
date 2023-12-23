@@ -1,0 +1,74 @@
+<div class="d-flex justify-content-center align-items-center">
+    <img src="../../assets/logo.png" class="logo" alt="Logo">
+</div>
+<!-- Pills navs -->
+<div class="text-center mt-5">
+    <!-- <h1>Sign Up</h1> -->
+    <span>Enter patient details</span>
+</div>
+
+<!-- Pills content -->
+<div class="tab-content" style="width: 70%; margin-left: 15%;margin-top: 10%;">
+    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+    <label>Upload patient image</label>
+    <div class="card text-center mt-4" style="width: 120px; height: 110px;">
+        <div class="card-body">
+            <h1 class="card-title">+</h1>
+            <p class="card-text">Upload</p>
+        </div>
+    </div>
+
+        
+    <div class="tab-content" style="width: 100%;margin-top: 10%;">
+        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+            <form>
+    
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="loginName">Patient full name <span class="red-text">*</span></label>
+                    <input type="email" id="loginName" class="form-control" formControlName="email" />
+                </div>
+    
+                <!-- Password input -->
+                <div class="form-outline mb-4" >
+                    <label class="form-label" for="loginPassword">Age <span class="red-text">*</span></label>
+                    <input type="password" id="loginPassword" class="form-control" formControlName="password" />
+                </div>
+
+                <label class="form-label" for="loginPassword">Gender <span class="red-text">*</span></label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                <label class="form-label" for="loginPassword">Relation Type <span class="red-text">*</span></label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                <!-- 2 column grid layout -->
+                <div class="row mb-4">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <!-- Checkbox -->
+                    </div>
+    
+                </div>
+    
+                <!-- Submit button -->
+                <!-- Submit button -->
+                <div class="d-grid mb-5">
+                    <button type="submit" class="btn btn-primary"  routerLink="/home">Continue</button>
+                </div>
+            </form>
+        </div>
+     
+    </div>
+    
+    </div>
+ 
+</div>
+<!-- Pills content -->

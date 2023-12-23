@@ -1,0 +1,72 @@
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: #f2f5fa;
+        margin-bottom: 10%;
+    }
+}
+
+.logo {
+    margin-top: 3rem;
+}
+
+.btn_border_oauth {
+    border-color: black;
+    background-color: #f2f5fa;
+}
+
+h2 {
+    line-height: 0.1em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* h2 span { 
+         background:#fff; 
+         padding:0 5px; 
+     } */
+
+.red-text {
+    color: red;
+}
+
+.singup {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.card{
+    border-radius: 5%; /* Rounded corners */
+    
+
+}
+
+
+.arrow {
+    border: solid black;
+    border-width: 0px 4px 4px 0px;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 5%;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .test{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+  .containerFor{
+    display: flex;
+  }
+  
+
+
+
+      

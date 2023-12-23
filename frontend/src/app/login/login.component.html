@@ -1,0 +1,69 @@
+<!-- Pills navs -->
+<!-- <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist"
+    style="width: 50%; margin-left: 25%; margin-top: 5%;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+            aria-controls="pills-login" aria-selected="true" (click)="showSignUpForm(false,true)">Login</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+            aria-controls="pills-register" aria-selected="false" (click)="showSignUpForm(true,false)">Register</a>
+    </li>
+</ul> -->
+<div class="d-flex justify-content-center align-items-center">
+    <img src="../../assets/logo.png" class="logo" alt="Logo">
+</div>
+<!-- Pills navs -->
+<div class="text-center mt-5">
+    <h1>Log In</h1>
+    <span>Welcome to LifeLink! Please enter<br> your details.</span>
+</div>
+
+<!-- Pills content -->
+<div class="tab-content" style="width: 70%; margin-left: 15%;margin-top: 10%;">
+    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+        <form *ngIf="showSignIn" [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginName">Email <span class="red-text">*</span></label>
+                <input type="email" id="loginName" class="form-control" formControlName="email" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4" >
+                <label class="form-label" for="loginPassword">Password <span class="red-text">*</span></label>
+                <input type="password" id="loginPassword" class="form-control" formControlName="password" />
+            </div>
+
+            <!-- 2 column grid layout -->
+            <div class="row mb-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Checkbox -->
+                </div>
+
+            </div>
+
+            <!-- Submit button -->
+            <!-- Submit button -->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Log In</button>
+            </div>
+
+            <div class="text-center my-3">
+                <h2><span>or</span></h2>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-floating btn_border_oauth" ><img src="../../assets/google.png" width="30px" height="30px"> Login with google</button>
+            </div>
+            <h6 class="singup text-center">Don’t have an account? <a routerLink="/signup" class="ml-5" >Sign up</a></h6>
+            <!-- Register buttons
+            <div class="text-center">
+                <p>Not a member? <a href="#!">Register</a></p>
+            </div> -->
+        </form>
+    </div>
+ 
+</div>
+<!-- Pills content -->
